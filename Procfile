@@ -1,1 +1,1 @@
-worker: node BotScript2.js
+worker: node zanpapi.js
