@@ -63,9 +63,9 @@ client.on('message', (message) => {
                                         }]
                                     }
                                 })
-                                message.member.setNickname(`[OR-1] ${username}`)
-                                message.member.addRole(ausPer);
-                                message.member.removeRole(adm);
+                                message.member.setNickname(`[OR-1] ${username}`).then(function(){
+                                message.member.addRole(ausPer)
+                                message.member.removeRole(adm)})
                             }
                         }).catch(function(err){
                             message.author.send({
