@@ -37,7 +37,7 @@ client.on('message', (message) => {
                         fields: [{
                             name: 'READ THE INSTRUCTIONS **CAREFULLY**',
                             value: `Hello, ${username}
-                            Please verify yourself by putting this code in your profile's **description**
+                            Please verify yourself by putting this code in your profile's **status**
                             **__When you're done, react with__** 👌
                             code: **${codeGiven}**`
                         }] 
@@ -48,8 +48,8 @@ client.on('message', (message) => {
                     const collector = ch.createReactionCollector(reactionFilt, {time: 300000})
                     collector.on('collect', () => verNow())
                     function verNow(){
-                        roblox.getBlurb(id).then(function(blurb){
-                            if(blurb.includes(codeGiven)){
+                        roblox.getStatus(id).then(function(status){
+                            if(status.includes(codeGiven)){
                                 console.log('success')
                                 collector.stop()
                                 message.author.send({
@@ -74,7 +74,7 @@ client.on('message', (message) => {
                                     title: 'Verification Proccess',
                                     fields:[{
                                         name: 'Failure!',
-                                        value: 'Something went wrong\nPlease try again!'
+                                        value: `Something went wrong\nPlease try again! ${err}`
                                     }]
                                 }
                             })
