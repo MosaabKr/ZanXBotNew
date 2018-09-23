@@ -137,20 +137,28 @@ client.on('message', (message) => {
                     message.member.setNickname(`[OR-6] ${nubName}`)
                 } else if(rank === 19) {
                     message.member.setNickname(`[OF-1] ${nubName}`)
+                    message.member.addRole('493384595027525636')
                 } else if(rank === 20) {
                     message.member.setNickname(`[OF-2] ${nubName}`)
+                    message.member.addRole('493384595027525636')
                 } else if(rank === 21) {
                     message.member.setNickname(`[OF-3] ${nubName}`)
+                    message.member.addRole('493384595027525636')
                 } else if(rank === 23) {
                     message.member.setNickname(`[OF-4] ${nubName}`)
+                    message.member.addRole('490255787202183190')
                 } else if(rank === 24) {
                     message.member.setNickname(`[OF-5] ${nubName}`)
+                    message.member.addRole('490255787202183190')
                 } else if(rank === 25) {
                     message.member.setNickname(`[OF-6] ${nubName}`)
+                    message.member.addRole('490255787202183190')
                 } else if(rank === 26) {
                     message.member.setNickname(`[OF-7] ${nubName}`)
+                    message.member.addRole('490212842331701248')
                 } else if(rank === 27) {
                     message.member.setNickname(`[OF-8] ${nubName}`)
+                    message.member.addRole('490212842331701248')
                 } else if(rank === 28) {
                     message.member.setNickname(`[OF-9] ${nubName}`)
                 } else if(rank === 29) {
