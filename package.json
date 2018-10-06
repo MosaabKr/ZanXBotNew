@@ -1,17 +1,16 @@
-
 {
-  "name": "zanxbotnew",
-  "version": "1.0.0",
-  "description": "Discord Bot",
-  "main": "zanpapi.js",
-  "scripts": {
-    "start": "node bot.js"
-  },
-  "author": "Socratides",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^11.3.2",
-    "npm": "^6.0.0",
-    "roblox-js": "^4.0.2",
-  }
+    "name": "zanxbotnew",
+    "version": "1.0.0",
+    "description": "bot",
+    "main": "zanpapi.js",
+    "scripts": {
+        "start": "node zanpapi.js"
+    },
+    "author": "Socratides",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^11.3.2",
+        "roblox-js": "^4.0.2",
+        "npm": "^6.0.0",
+    }
 }
