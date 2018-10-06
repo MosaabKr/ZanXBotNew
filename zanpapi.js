@@ -63,7 +63,7 @@ client.on('message', (message) => {
                                         }]
                                     }
                                 })
-                                message.member.setNickname(`[OR-1] ${username}`).then(function(){
+                                message.member.setNickname(`[PVT] ${username}`).then(function(){
                                 message.member.addRole(ausPer)
                                 message.member.removeRole(adm)})
                             }
@@ -123,44 +123,41 @@ client.on('message', (message) => {
             roblox.getRankInGroup(groupId, id)
             .then(function(rank){
                 if (rank === 13) {
-                    message.member.setNickname(`[OR-2] ${nubName}`);
+                    message.member.setNickname(`[LCPL] ${nubName}`);
                 }
                 else if(rank === 14) {
-                    message.member.setNickname(`[OR-3] ${nubName}`)
+                    message.member.setNickname(`[CPL] ${nubName}`)
                 } else if(rank === 15) {
-                    message.member.setNickname(`[OR-4] ${nubName}`)
+                    message.member.setNickname(`[SGT] ${nubName}`)
                 } else if(rank === 16) {
-                    message.member.setNickname(`[OR-5] ${nubName}`)
+                    message.member.setNickname(`[SSTG] ${nubName}`)
                 } else if(rank === 17) {
                     message.member.setNickname(`[ALLY] ${nubName}`)
                 } else if(rank === 18) {
-                    message.member.setNickname(`[OR-6] ${nubName}`)
+                    message.member.setNickname(`[SLT] ${nubName}`)
                 } else if(rank === 19) {
-                    message.member.setNickname(`[OF-1] ${nubName}`)
+                    message.member.setNickname(`[LT] ${nubName}`)
                     message.member.addRole('493384595027525636')
                 } else if(rank === 20) {
-                    message.member.setNickname(`[OF-2] ${nubName}`)
+                    message.member.setNickname(`[CPT] ${nubName}`)
                     message.member.addRole('493384595027525636')
                 } else if(rank === 21) {
-                    message.member.setNickname(`[OF-3] ${nubName}`)
+                    message.member.setNickname(`[MAJ] ${nubName}`)
                     message.member.addRole('493384595027525636')
                 } else if(rank === 23) {
-                    message.member.setNickname(`[OF-4] ${nubName}`)
+                    message.member.setNickname(`[LTCOL] ${nubName}`)
                     message.member.addRole('490255787202183190')
                 } else if(rank === 24) {
-                    message.member.setNickname(`[OF-5] ${nubName}`)
+                    message.member.setNickname(`[COL] ${nubName}`)
                     message.member.addRole('490255787202183190')
                 } else if(rank === 25) {
-                    message.member.setNickname(`[OF-6] ${nubName}`)
+                    message.member.setNickname(`[BRIG] ${nubName}`)
                     message.member.addRole('490255787202183190')
-                } else if(rank === 26) {
-                    message.member.setNickname(`[OF-7] ${nubName}`)
-                    message.member.addRole('490212842331701248')
                 } else if(rank === 27) {
-                    message.member.setNickname(`[OF-8] ${nubName}`)
+                    message.member.setNickname(`[LTGEN] ${nubName}`)
                     message.member.addRole('490212842331701248')
                 } else if(rank === 28) {
-                    message.member.setNickname(`[OF-9] ${nubName}`)
+                    message.member.setNickname(`[GEN] ${nubName}`)
                 } else if(rank === 29) {
                     message.member.setNickname(`[FM]  ${nubName}`)
                 } else if(rank === 30) {
