@@ -117,7 +117,8 @@ client.on('message', (message) => {
 client.on('message', (message) => {
     if (isCommand('Update', message)){
         text = message.member.nickname
-        nubName = text.substring(7, text.length)
+        nubName1 = text.indexOf(']');
+        nubName = text.substring(nubName + 1, text.length)
         roblox.getIdFromUsername(nubName)
         .then(function(id){
             roblox.getRankInGroup(groupId, id)
